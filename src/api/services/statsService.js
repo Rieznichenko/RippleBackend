@@ -1,4 +1,5 @@
 require('dotenv').config();
+const axios = require("axios");
 const xrpl = require("xrpl");
 
 const getStatisticsData = async () => {
@@ -11,6 +12,8 @@ const getStatisticsData = async () => {
         proposers: 0,
     };
     //try to connect to Server
+    const MY_SERVER = process.env.RIPPLE_SERVER_WEBSOCKET;
+    const client = new xrpl.Client(MY_SERVER);
     try {
         await client.connect();
     } catch (e) {
@@ -20,10 +23,6 @@ const getStatisticsData = async () => {
         id: 1,
         command: "server_state",
     });
-    console.log(server_state.result.state.validated_ledger.seq);
-    console.log(server_state.result.state.validated_ledger.close_time);
-    console.log(server_state.result.state.validation_quorum);
-    console.log(server_state.result.state.last_close.proposers);
 
     statisticsData.ledgerIndex = server_state.result.state.validated_ledger.seq;
     if (server_state.result.state.validated_ledger.close_time)
@@ -40,7 +39,6 @@ const getStatisticsData = async () => {
         expand: true,
         owner_funds: false,
     });
-    console.log(ledger_state.result.ledger.transactions.length);
     statisticsData.txCount = Math.round(
         ledger_state.result.ledger.transactions.length
     );
@@ -48,13 +46,18 @@ const getStatisticsData = async () => {
     const transactionData = await axios.get(
         "https://livenet.xrpl.org/api/v1/metrics"
     );
-    console.log(transactionData.data.txn_sec);
     statisticsData.TPS = transactionData.data.txn_sec;
 
-    console.log(statisticsData);
     client.disconnect();
     return statisticsData;
 };
+const covertRippleTimestamp = function (rippleTimestamp) {
+    const rippleEpochOffset = 946684800; // Ripple Epoch offset in seconds
+
+    // Create a new Date object by converting the Ripple timestamp to milliseconds and adding the Ripple Epoch offset
+    date = new Date((rippleTimestamp + rippleEpochOffset) * 1000);
+    return date;
+}
 
 module.exports = {
     getStatisticsData,

@@ -4,9 +4,9 @@ const serverController = require('../controllers/serverController');
 const router = express.Router();
 
 // Route to get the state of a single server
-router.get('/state', serverController.getServerState);
+router.get('/hubstate', serverController.getServerState);
 
 // Route to get the states of multiple servers
-router.get('/states', serverController.getServerStates);
+router.get('/allstates', serverController.getServerStates);
 
 module.exports = router;

@@ -1,5 +1,6 @@
 require('dotenv').config();
 const xrpl = require("xrpl");
+const { getStatisticsData } = require("./statsService");
 
 const getServerState = async () => {
     const MY_SERVER = process.env.RIPPLE_SERVER_WEBSOCKET;
@@ -53,6 +54,40 @@ const getServerStates = async () => {
     };
 };
 
+const getServerStateData = async (client) => {
+    try {
+        try {
+            await client.connect();
+        } catch (e) {
+            await client.disconnect();
+            return "";
+        }
+        const response = await client.request({
+            command: "server_state",
+        });
+        return extractServerInfo(response);
+    } catch (error) {
+        process.exit(1);
+        console.error("An ZZZ error occurred:", error);
+        await client.disconnect();
+        throw error;
+    } finally {
+        await client.disconnect();
+    }
+}
+
+const extractServerInfo = (jsonData) => {
+    const nodeData = {
+        pubkey: jsonData.result.state.pubkey_node,
+        version: jsonData.result.state.build_version,
+        uptime: jsonData.result.state.uptime,
+        proposers: jsonData.result.state.last_close.proposers,
+        quorum: jsonData.result.state.validation_quorum,
+        ledger_Index: jsonData.result.state.validated_ledger.seq,
+        peers: jsonData.result.state.peers,
+    };
+    return nodeData;
+}
 module.exports = {
     getServerState,
     getServerStates,

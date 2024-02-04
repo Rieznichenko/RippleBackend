@@ -18,6 +18,7 @@ const getPeerInformation = async () => {
     await client.disconnect();
     return nodeInfoList;
 };
+
 //Extract Each Node Information
 const extractNodeInfo = async () => {
     const peers = jsonObject.result.peers;

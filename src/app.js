@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 // API Routes
-app.use('/api', apiRoutes);
+app.use('/api/v1', apiRoutes);
 
 // Start server
 const PORT = process.env.PORT || 3000;
