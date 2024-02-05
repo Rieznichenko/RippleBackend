@@ -131,8 +131,30 @@ const getLedgerTransactions = async (ledgerIndex) => {
     }
 };
 
+const getSiginificantTransactions = async () => {
+    const client = new xrpl.Client(process.env.RIPPLE_NODE2_WEBSOCKET); // This is Ripple's public server
+    try {
+        await client.connect();
+        let transactions = await client.request({
+            command: "tx_history",
+            start : 0
+        });
+        console.log(transactions.result.txs)
+        // let transactionsOnedayAgo = transactions.result.txs.filter((transaction) => {
+
+        // })
+        await client.disconnect();
+        return { burnedFees: parseFloat(burnedFees), transactions, close_time: new Date(ledger.result.ledger.close_time_human) };
+    } catch (e) {
+        console.log(e);
+        await client.disconnect();
+        return [];
+    }
+}
+
 
 module.exports = {
     getLedgerHistory,
     getLedgerTransactions,
+    getSiginificantTransactions
 };

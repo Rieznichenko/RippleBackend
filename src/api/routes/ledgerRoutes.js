@@ -9,4 +9,7 @@ router.get('/history', ledgerController.getLedgerHistory);
 // Route to get transactions for a specific ledger
 router.get('/:id/transactions', ledgerController.getLedgerTransactions);
 
+//Route to get most significant transactions in last 24 hours
+router.get('/:id/transactions', ledgerController.getLedgerTransactions);
+
 module.exports = router;
