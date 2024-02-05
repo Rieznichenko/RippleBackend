@@ -1,3 +1,4 @@
+const { default: axios } = require('axios');
 const ledgerService = require('../services/ledgerService');
 
 // Get the history of ledgers
@@ -23,7 +24,20 @@ const getLedgerTransactions = async (req, res) => {
   }
 };
 
+const getSiginificantTransactions = async (req, res) => {
+  
+  try {
+    const response = await axios('https://bithomp.com/api/cors/v2/transactions/whale');
+    const data = response.data;
+    res.json(data);
+  } catch (error) {
+    console.error('Error fetching ledger transactions:', error);
+    res.status(500).send("An error occurred while fetching ledger transactions.");
+  }
+}
+
 module.exports = {
   getLedgerHistory,
-  getLedgerTransactions
+  getLedgerTransactions,
+  getSiginificantTransactions
 };
