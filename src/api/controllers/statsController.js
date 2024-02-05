@@ -1,3 +1,4 @@
+const { default: axios } = require('axios');
 const statsService = require('../services/statsService');
 
 // Get general statistics data
