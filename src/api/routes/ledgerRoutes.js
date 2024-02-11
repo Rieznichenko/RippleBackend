@@ -10,6 +10,6 @@ router.get('/latest', ledgerController.getLedgerHistory);
 router.get('/transactions/:id', ledgerController.getLedgerTransactions);
 
 //Route to get most significant transactions in last 24 hours
-router.get('/significant_transactions', ledgerController.getSiginificantTransactions);
+router.get('/whale_transactions', ledgerController.getSiginificantTransactions);
 
 module.exports = router;

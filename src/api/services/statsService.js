@@ -10,6 +10,7 @@ const getStatisticsData = async () => {
         txCount: 0,
         quorum: 0,
         proposers: 0,
+        accounts: 0,
     };
     //try to connect to Server
     const MY_SERVER = process.env.RIPPLE_SERVER_WEBSOCKET;
@@ -48,9 +49,16 @@ const getStatisticsData = async () => {
     );
     statisticsData.TPS = transactionData.data.txn_sec;
 
+    const accountsResponse = await axios('https://bithomp.com/api/cors/v2/statistics');
+    const accInfo = accountsResponse.data;
+    
+    statisticsData.accounts = accInfo.accounts.created - accInfo.accounts.deleted;
+    
+
     client.disconnect();
     return statisticsData;
 };
+
 const covertRippleTimestamp = function (rippleTimestamp) {
     const rippleEpochOffset = 946684800; // Ripple Epoch offset in seconds
 
