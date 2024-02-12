@@ -1,0 +1,20 @@
+{
+    "name": "ripplenode",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node src/app.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^1.6.7",
+        "cors": "^2.8.5",
+        "dotenv": "^6.2.0",
+        "express": "^4.16.4",
+        "nodemon": "^3.0.1",
+        "xrpl": "^2.13.0"
+    }
+}
