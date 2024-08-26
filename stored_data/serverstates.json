@@ -1,0 +1,50 @@
+{
+  "statistics": {
+    "ledgerIndex": 90318677,
+    "closeTime": "2024-08-26T11:43:10.000Z",
+    "TPS": "15.00",
+    "txCount": 45,
+    "quorum": 28,
+    "proposers": 35,
+    "accounts": 0
+  },
+  "serverStatus": [
+    {
+      "pubkey": "n9LbsqDbBQJQrwvKav51VcAiojNYFVTGCph8HYWRXxK5i1xHKHNj",
+      "version": "2.2.1",
+      "uptime": 234485,
+      "proposers": 35,
+      "quorum": 28,
+      "ledger_Index": 90318677,
+      "peers": 114
+    },
+    {
+      "pubkey": "n94Lo4MBCNHWzDnLY9XuLdFrJPtWoiXYf6eZy8V2xmXLBgJsivAk",
+      "version": "2.2.1",
+      "uptime": 419983,
+      "proposers": 35,
+      "quorum": 28,
+      "ledger_Index": 90318677,
+      "peers": 25
+    },
+    {},
+    {
+      "pubkey": "n9Kr6KD5yW1MVQp1ufM9JR5GdZzHG3F43PzmPymb7ARgy7mBeooC",
+      "version": "2.2.1",
+      "uptime": 2164969,
+      "proposers": 34,
+      "quorum": 28,
+      "ledger_Index": 90318677,
+      "peers": 7
+    },
+    {
+      "pubkey": "n9M67J74dc4JSrGNPGStVbJe9N3WPBxsuAYgGVGEiiqYePxadabM",
+      "version": "2.2.1",
+      "uptime": 234685,
+      "proposers": 35,
+      "quorum": 28,
+      "ledger_Index": 90318677,
+      "peers": 129
+    }
+  ]
+}
