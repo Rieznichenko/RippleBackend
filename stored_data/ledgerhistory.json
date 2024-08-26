@@ -1,72 +1,72 @@
 [
   {
-    "ledgerIndex": "90318668",
-    "close_time": 40,
-    "hash": "7B5784E79F57BDFE7F927AFBC1F007C8710725A0C7CE7212DD56DC6AEB580CD1",
-    "transactionCount": 54,
-    "burnedFees": 0.21207500000000007
+    "ledgerIndex": "90320440",
+    "close_time": 34,
+    "hash": "FBCE412CBC3DC64C693D2FE339416B7EB4FC9DEC882A983804C724984948F0E5",
+    "transactionCount": 74,
+    "burnedFees": 0.018862999999999998
   },
   {
-    "ledgerIndex": "90318669",
-    "close_time": 39,
-    "hash": "8808DCA66827CB20E3B2D327EBA010B6282865CDDC46599EA74D1CE319E1928C",
-    "transactionCount": 67,
-    "burnedFees": 0.03971000000000002
+    "ledgerIndex": "90320441",
+    "close_time": 33,
+    "hash": "77215060C4728FAAB102113D551C06382F2E81A03AF9F4A1D623E1EC10024BE4",
+    "transactionCount": 52,
+    "burnedFees": 1.0006460000000006
   },
   {
-    "ledgerIndex": "90318670",
-    "close_time": 31,
-    "hash": "1F0AC629CC1A959CAF9F28E76FFE67491D09B1D8C3B9E8E2586F2629A0C5C9E1",
+    "ledgerIndex": "90320442",
+    "close_time": 32,
+    "hash": "4D17D304B71FB4AF80EA2068F5258C0B60BB37C5DA429860B06304A8387B3DEB",
+    "transactionCount": 71,
+    "burnedFees": 0.038345999999999984
+  },
+  {
+    "ledgerIndex": "90320443",
+    "close_time": 24,
+    "hash": "42DFCD322A5024901D3BF4E82F616F33172337E107360CDEE02BC3D4C7F7C67B",
     "transactionCount": 66,
-    "burnedFees": 0.001310000000000001
+    "burnedFees": 0.32046600000000036
   },
   {
-    "ledgerIndex": "90318671",
-    "close_time": 30,
-    "hash": "224DFEDB9BBD6CF0168E2BF250C8A34B3AAED72E6BA1EC5450248CB1BA6A74F3",
-    "transactionCount": 60,
-    "burnedFees": 0.0017270000000000009
+    "ledgerIndex": "90320444",
+    "close_time": 23,
+    "hash": "623E02A128617E152D39C978F1DB942F33CD39EC0AE5C8856BA5ACD78B6120FA",
+    "transactionCount": 72,
+    "burnedFees": 1.0029540000000017
   },
   {
-    "ledgerIndex": "90318672",
-    "close_time": 21,
-    "hash": "13DD13B40AD958C5DA69B71C358CF6E01BC8C57C861A2CBCA722498D79AE1C54",
-    "transactionCount": 53,
-    "burnedFees": 0.0058529999999999876
+    "ledgerIndex": "90320445",
+    "close_time": 22,
+    "hash": "CFF99ACFCF67AA1FCB4C08BE32AC3485959C66D815E59AB91A779C4190C7ED1B",
+    "transactionCount": 64,
+    "burnedFees": 0.005000000000000001
   },
   {
-    "ledgerIndex": "90318673",
-    "close_time": 20,
-    "hash": "AC8D42F75E2997035F2BC99248FF9D8A0CD58D419725C866A209B92E0F99250A",
-    "transactionCount": 53,
-    "burnedFees": 0.010634999999999985
+    "ledgerIndex": "90320446",
+    "close_time": 14,
+    "hash": "D6C1C694F123E8BC0A7C3D26F7C4F5A46EAA4669053869690B53BF25A80FA63C",
+    "transactionCount": 54,
+    "burnedFees": 0.0046549999999999925
   },
   {
-    "ledgerIndex": "90318674",
-    "close_time": 19,
-    "hash": "DF0C1CB93DE595BEEBC299BB6EC1A578D5AC26B960212F152698FF0596236D2F",
-    "transactionCount": 50,
-    "burnedFees": 1.0025900000000003
+    "ledgerIndex": "90320447",
+    "close_time": 13,
+    "hash": "2287826149A174E979A3240EE842F3057F3146580A2CD773C941B4AE9FDBDC75",
+    "transactionCount": 66,
+    "burnedFees": 0.012856999999999976
   },
   {
-    "ledgerIndex": "90318675",
-    "close_time": 11,
-    "hash": "17362A59AFF4F0E5E34CF949258A2A2E2A615A85510C1DB4F3B7245E11F73234",
-    "transactionCount": 50,
-    "burnedFees": 1.0057660000000002
+    "ledgerIndex": "90320448",
+    "close_time": 4,
+    "hash": "7CFE06F56FFFAB669ACA5023F988618E86EAF41B6D07BBA3DF450DEF080D4D70",
+    "transactionCount": 63,
+    "burnedFees": 0.021294999999999998
   },
   {
-    "ledgerIndex": "90318676",
-    "close_time": 10,
-    "hash": "C93B5008FB47ADC080F41A0045324489FDCC4700AE24E899B8EBFC0A0671AFF1",
-    "transactionCount": 46,
-    "burnedFees": 0.005611999999999996
-  },
-  {
-    "ledgerIndex": "90318677",
-    "close_time": 1,
-    "hash": "179B8E00E79865CB97FEE0282C013E204F6E3A2668F9E332C1007FF0E612A53D",
-    "transactionCount": 45,
-    "burnedFees": 0.012507999999999997
+    "ledgerIndex": "90320449",
+    "close_time": 3,
+    "hash": "5F40039A6E8484B4F7E4773B35F0E17231FCF704B0DF39131C503467208DF140",
+    "transactionCount": 59,
+    "burnedFees": 0.009911999999999989
   }
 ]

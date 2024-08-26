@@ -2,21 +2,21 @@
   {
     "pubkey": "n9LbsqDbBQJQrwvKav51VcAiojNYFVTGCph8HYWRXxK5i1xHKHNj",
     "version": "2.2.1",
-    "uptime": 234483,
+    "uptime": 241348,
     "proposers": 35,
     "quorum": 28,
-    "ledger_Index": 90318677,
-    "peers": 114,
+    "ledger_Index": 90320449,
+    "peers": 94,
     "node": "XRPK HUB 01"
   },
   {
     "pubkey": "n9M67J74dc4JSrGNPGStVbJe9N3WPBxsuAYgGVGEiiqYePxadabM",
     "version": "2.2.1",
-    "uptime": 234684,
+    "uptime": 241548,
     "proposers": 35,
     "quorum": 28,
-    "ledger_Index": 90318677,
-    "peers": 129,
+    "ledger_Index": 90320450,
+    "peers": 138,
     "node": "XRPK HUB 02"
   }
 ]
