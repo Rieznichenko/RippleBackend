@@ -98,11 +98,11 @@ const getServerStates = async () => {
 
   const servers = [
     RIPPLE_NODE1_SERVER,
-    RIPPLE_NODE1_SERVER,
     RIPPLE_NODE2_SERVER,
     RIPPLE_NODE3_SERVER,
     RIPPLE_NODE4_SERVER,
     RIPPLE_NODE5_SERVER,
+    RIPPLE_NODE1_SERVER,
   ];
   const clients = servers.map((server) => server);
   console.log("Running 1 bot function...");
